@@ -1,13 +1,7 @@
-# TODO: Fix Laravel Code Issues
+# TODO: Fix Undefined Variable $slot Error
 
-## 1. Fix UserController store method ✅
-- Change 'npm' to 'nim' in UserController.php store method to match migration column name.
-
-## 2. Fix create_user.blade.php ✅
-- Change input name and label from 'npm' to 'nim'.
-
-## 3. Fix list_user.blade.php ✅
-- Change $user->nama_kelas to $user->kelas->nama_kelas to access related kelas name.
-
-## 4. Fix Kelas.php model ✅
-- Change 'hasmany' to 'hasMany' in Kelas.php model.
+## Steps to Complete
+- [x] Create the `app-layout` Blade component by copying content from `layouts/app.blade.php` to `resources/views/components/app-layout.blade.php`
+- [x] Update the component to use @yield('content') instead of {{ $slot }} for compatibility with @extends views
+- [x] Change dashboard.blade.php to use @extends('layouts.app') instead of <x-app-layout> to match other views
+- [ ] Test the dashboard page and other views to ensure the error is resolved
